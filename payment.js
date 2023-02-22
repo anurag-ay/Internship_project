@@ -22,6 +22,12 @@ app.get("/", (req, res) => {
         <p>Order ID: <span id="orderID"></span></p>
         <p>Date: <span id="date"></span></p>
 
+        <h2>Customer Details</h2>
+        <p>Customer Name: <span id="CustName"></span></p>
+        <p>Moble: $<span id="CustMobile"></span></p>
+        <p>Email: <span id="CustEmail"></span></p>
+        <p>Address: <span id="CustAddress"></span></p>
+
         <h2>Payment Information</h2>
         <form action="/process-payment" method="post">
           <label for="cardNumber">Card Number:</label>
@@ -45,6 +51,15 @@ app.get("/", (req, res) => {
           document.getElementById("price").innerHTML = "100";
           document.getElementById("orderID").innerHTML = "123456";
           document.getElementById("date").innerHTML = "February 22, 2023";
+
+          
+
+
+
+          document.getElementById("CustName").innerHTML = "CustomerName";
+          document.getElementById("CustMobile").innerHTML = "1009999999";
+          document.getElementById("CustEmail").innerHTML = "abc@gamail.com";
+          document.getElementById("CustAddress").innerHTML = "Vasant Vihar, New Delhi";
         </script>
       </body>
     </html>
